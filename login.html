@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingresar — Sonora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-brand">
+      <a class="brand brand--light" href="index.html"><span class="brand__mark">S</span><span>SONORA</span></a>
+      <div>
+        <span class="eyebrow">Tu sonido empieza aquí</span>
+        <h1>Accede a tu colección.</h1>
+        <p>Compra instrumentos, revisa tus pedidos y administra la tienda según tu cuenta.</p>
+      </div>
+    </section>
+
+    <section class="auth-card">
+      <a class="auth-back" href="index.html">← Volver a la tienda</a>
+      <span class="eyebrow">Acceso demo</span>
+      <h2>Iniciar sesión</h2>
+      <form id="loginForm" class="login-form">
+        <label>Correo electrónico
+          <input id="loginEmail" type="email" autocomplete="email" required>
+        </label>
+        <label>Contraseña
+          <input id="loginPassword" type="password" autocomplete="current-password" required>
+        </label>
+        <p class="form-error" id="loginError" role="alert"></p>
+        <button class="button button--primary button--full" type="submit">Ingresar</button>
+      </form>
+      <div class="demo-accounts">
+        <strong>Cuentas de prueba</strong>
+        <button type="button" data-email="ana@sonora.demo" data-password="Ana123">Ana — Usuario</button>
+        <button type="button" data-email="luis@sonora.demo" data-password="Luis123">Luis — Usuario</button>
+        <button type="button" data-email="admin@sonora.demo" data-password="Admin123">Administrador</button>
+      </div>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>

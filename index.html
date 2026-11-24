@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda musical con instrumentos, equipos y accesorios.">
+  <title>Sonora — Tienda de música</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#" aria-label="Sonora inicio">
+        <span class="brand__mark" aria-hidden="true">S</span>
+        <span>SONORA</span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Navegación principal">
+        <a class="nav__link active" href="#catalogo">Tienda</a>
+        <a class="nav__link" href="#categorias">Categorías</a>
+        <a class="nav__link" href="#ofertas">Ofertas</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-button" id="searchToggle" type="button" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+        </button>
+        <button class="cart-button" id="cartToggle" type="button" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L20.5 8H6.2"></path><circle cx="9.5" cy="19" r="1"></circle><circle cx="17" cy="19" r="1"></circle></svg>
+          <span class="cart-button__count" id="cartCount">0</span>
+        </button>
+        <button class="icon-button" id="accountButton" type="button" aria-label="Iniciar sesión">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.7-4 3-6 7-6s6.3 2 7 6"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow">Tu sonido empieza aquí</span>
+          <h1>Encuentra tu próxima gran pasión.</h1>
+          <p>Instrumentos y equipos seleccionados para músicos que buscan algo extraordinario.</p>
+          <a class="button button--primary" href="#catalogo">Explorar colección</a>
+        </div>
+        <div class="hero__visual" aria-label="Guitarra eléctrica">
+          <div class="hero__orb"></div>
+          <img src="https://images.unsplash.com/photo-1558098329-a11cff621064?auto=format&fit=crop&w=900&q=85" alt="Guitarra eléctrica negra">
+          <div class="hero__badge">
+            <strong>Nuevo</strong>
+            <span>Colección 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section" id="categorias">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Explora por categoría</span>
+            <h2>Todo para crear</h2>
+          </div>
+        </div>
+        <div class="category-grid">
+          <button class="category-card category-card--large active" data-category="Todos" type="button">
+            <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=800&q=80" alt="">
+            <span><strong>Todos</strong><small>Ver colección</small></span>
+          </button>
+          <button class="category-card" data-category="Guitarras" type="button">
+            <img src="https://images.unsplash.com/photo-1568193751596-5d884c7d6e1f?auto=format&fit=crop&w=700&q=80" alt="">
+            <span><strong>Guitarras</strong><small>12 productos</small></span>
+          </button>
+          <button class="category-card" data-category="Teclados" type="button">
+            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=700&q=80" alt="">
+            <span><strong>Teclados</strong><small>8 productos</small></span>
+          </button>
+          <button class="category-card" data-category="Audio" type="button">
+            <img src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&fit=crop&w=700&q=80" alt="">
+            <span><strong>Audio</strong><small>16 productos</small></span>
+          </button>
+          <button class="category-card" data-category="Batería" type="button">
+            <img src="https://images.unsplash.com/photo-1543443258-92b04ad5ec6b?auto=format&fit=crop&w=700&q=80" alt="">
+            <span><strong>Baterías</strong><small>7 productos</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section" id="catalogo">
+      <div class="container">
+        <div class="section-heading catalog-heading">
+          <div>
+            <span class="eyebrow">Selección destacada</span>
+            <h2>Productos favoritos</h2>
+          </div>
+          <label class="search-box" id="searchBox">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+            <input id="searchInput" type="search" placeholder="Buscar instrumento..." aria-label="Buscar instrumento">
+          </label>
+        </div>
+        <div class="filters" aria-label="Filtros de categoría">
+          <button class="filter active" data-filter="Todos" type="button">Todos</button>
+          <button class="filter" data-filter="Guitarras" type="button">Guitarras</button>
+          <button class="filter" data-filter="Teclados" type="button">Teclados</button>
+          <button class="filter" data-filter="Audio" type="button">Audio</button>
+          <button class="filter" data-filter="Batería" type="button">Batería</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>No encontramos productos con esa búsqueda.</p>
+      </div>
+    </section>
+
+    <section class="promo" id="ofertas">
+      <div class="container promo__inner">
+        <div>
+          <span class="eyebrow eyebrow--light">Oferta especial</span>
+          <h2>Haz que cada detalle suene mejor.</h2>
+          <p>Hasta 25% de descuento en equipo seleccionado.</p>
+        </div>
+        <a class="button button--light" href="#catalogo">Ver ofertas</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand brand--footer" href="#"><span class="brand__mark">S</span><span>SONORA</span></a>
+      <p>Instrumentos para expresar lo que eres.</p>
+      <p>© 2026 Sonora</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h2>Tu carrito <span id="cartTitleCount">(0)</span></h2>
+      <button class="icon-button" id="cartClose" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="button button--primary button--full" id="checkoutButton" type="button">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Producto añadido al carrito</div>
+
+  <div class="modal modal--orders" id="ordersModal" role="dialog" aria-modal="true" aria-labelledby="ordersTitle" aria-hidden="true">
+    <div class="modal__header">
+      <div>
+        <span class="eyebrow" id="ordersEyebrow">Mis compras</span>
+        <h2 id="ordersTitle">Historial</h2>
+      </div>
+      <button class="icon-button modal__close" type="button" data-close-modal="ordersModal" aria-label="Cerrar">×</button>
+    </div>
+    <div class="orders-list" id="ordersList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

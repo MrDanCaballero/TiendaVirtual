@@ -1,0 +1,123 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Stratocaster Vintage",
+      "category": "Guitarras",
+      "price": 124990,
+      "tag": "Más vendido",
+      "image": "https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 2,
+      "name": "Teclado Stage 88",
+      "category": "Teclados",
+      "price": 89990,
+      "tag": "Nuevo",
+      "image": "https://images.unsplash.com/photo-1550291652-6ea9114a47b1?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 3,
+      "name": "Auriculares Studio Pro",
+      "category": "Audio",
+      "price": 24990,
+      "tag": "Oferta",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 4,
+      "name": "Batería Acoustic Oak",
+      "category": "Batería",
+      "price": 189990,
+      "tag": "Premium",
+      "image": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 5,
+      "name": "Guitarra Acústica Cedar",
+      "category": "Guitarras",
+      "price": 74990,
+      "tag": "Nuevo",
+      "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 6,
+      "name": "Sintetizador Compact",
+      "category": "Teclados",
+      "price": 65990,
+      "tag": "",
+      "image": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 7,
+      "name": "Micrófono Condenser X1",
+      "category": "Audio",
+      "price": 41990,
+      "tag": "Más vendido",
+      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 8,
+      "name": "Pedal Overdrive Gold",
+      "category": "Guitarras",
+      "price": 32990,
+      "tag": "",
+      "image": "https://images.unsplash.com/photo-1520166012956-add9ba0835cb?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 9,
+      "name": "Bajo Eléctrico Precision",
+      "category": "Guitarras",
+      "price": 109990,
+      "tag": "Nuevo",
+      "image": "https://images.unsplash.com/photo-1605020420620-20c943cc4669?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 10,
+      "name": "Piano Digital Home",
+      "category": "Teclados",
+      "price": 149990,
+      "tag": "Premium",
+      "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 11,
+      "name": "Interfaz de Audio 8x4",
+      "category": "Audio",
+      "price": 79990,
+      "tag": "Oferta",
+      "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=700&q=85"
+    },
+    {
+      "id": 12,
+      "name": "Caja de Ritmos Beat Pro",
+      "category": "Batería",
+      "price": 54990,
+      "tag": "",
+      "image": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&fit=crop&w=700&q=85"
+    }
+  ],
+  "users": [
+    {
+      "id": 101,
+      "name": "Ana Martínez",
+      "email": "ana@sonora.demo",
+      "password": "Ana123",
+      "role": "user"
+    },
+    {
+      "id": 102,
+      "name": "Luis García",
+      "email": "luis@sonora.demo",
+      "password": "Luis123",
+      "role": "user"
+    },
+    {
+      "id": 901,
+      "name": "Administrador",
+      "email": "admin@sonora.demo",
+      "password": "Admin123",
+      "role": "admin"
+    }
+  ]
+}
